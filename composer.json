@@ -2,7 +2,7 @@
     "name": "marcelfenerich/first-composer-plugin-test",
     "description": "It\u0020s\u00ECiis\u0020just\u0020a\u0020joke",
     "type": "library",
-    "keywords": [""],
+    "keywords": ["test", "fenerich", "joke"],
     "homepage": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest",
     "license": "MIT",
     "authors": [
