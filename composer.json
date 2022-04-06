@@ -1,5 +1,5 @@
 {
-    "name": "first\u002Dcomposer\u002Dplugin\u002Dtest",
+    "name": "marcelfenerich/first-composer-plugin-test",
     "description": "It\u0020s\u00ECiis\u0020just\u0020a\u0020joke",
     "type": "library",
     "keywords": [""],
