@@ -1,0 +1,69 @@
+{
+    "name": "first\u002Dcomposer\u002Dplugin\u002Dtest",
+    "description": "It\u0020s\u00ECiis\u0020just\u0020a\u0020joke",
+    "type": "library",
+    "keywords": [""],
+    "homepage": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel\u0020Fenerich",
+            "email": "linuxmenn\u0040gmail.com",
+            "homepage": "https\u003A\/\/github.com\/marcelfenerich"
+        }
+    ],
+    "support": {
+        "docs": "https://marcelfenerich.github.io/first\u002Dcomposer\u002Dplugin\u002Dtest/",
+        "issues": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest/issues",
+        "rss": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest/releases.atom",
+        "source": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest.git",
+        "wiki": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest/wiki"
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^1",
+        "mockery/mockery": "^1",
+        "phpstan/phpstan": "^0.11",
+        "phpstan/phpstan-mockery": "^0.11",
+        "phpunit/phpunit": "^8",
+        "squizlabs/php_codesniffer": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "FirstComposerPluginTest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FirstComposerPluginTest\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "parallel-lint src tests",
+        "phpcs": "phpcs src tests --standard=psr12 -sp --colors",
+        "phpstan": [
+            "phpstan analyse src -c phpstan.neon --level max --no-progress",
+            "phpstan analyse tests -c phpstan.neon --level 4 --no-progress"
+        ],
+        "phpunit": "phpunit --verbose --colors=always",
+        "phpunit-ci": "phpunit --verbose --coverage-clover build/logs/clover.xml",
+        "phpunit-coverage": "phpunit --verbose --colors=always --coverage-html build/coverage",
+        "test": [
+            "@lint",
+            "@phpcs",
+            "@phpstan",
+            "@phpunit"
+        ],
+        "test-ci": [
+            "@lint",
+            "@phpcs",
+            "@phpstan",
+            "@phpunit-ci"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
