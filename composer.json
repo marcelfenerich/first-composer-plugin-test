@@ -20,7 +20,7 @@
         "wiki": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest/wiki"
     },
     "require": {
-        "php": "^7.2"
+        "php": "^7.1"
     },
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "^1",
