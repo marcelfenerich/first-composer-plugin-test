@@ -19,6 +19,7 @@
         "source": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest.git",
         "wiki": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest/wiki"
     },
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.1"
     },
