@@ -1,4 +1,5 @@
 {
+    "version": "0.0.2",
     "name": "marcelfenerich/first-composer-plugin-test",
     "description": "It\u0020s\u00ECiis\u0020just\u0020a\u0020joke",
     "type": "library",
@@ -19,7 +20,6 @@
         "source": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest.git",
         "wiki": "https://github.com/marcelfenerich/first\u002Dcomposer\u002Dplugin\u002Dtest/wiki"
     },
-    "minimum-stability": "dev",
     "require": {
         "php": "^7.2"
     },
